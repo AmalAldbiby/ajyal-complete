@@ -2682,37 +2682,37 @@ msgstr "مؤسسة التعيين عبر الإنترنت"
 #: model:ir.module.category,name:openeducat_core.module_category_openeducat
 #: model:ir.ui.menu,name:openeducat_core.menu_op_school_root
 msgid "OpenEduCat"
-msgstr "OpenEducat"
+msgstr "اجيال"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "OpenEduCat Apps"
-msgstr "تطبيقات OpenEducat"
+msgstr "تطبيقات اجيال"
 
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_op_batch
 msgid "OpenEduCat Batch"
-msgstr "دفعة OpenEducat"
+msgstr "دفعة اجيال"
 
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_op_category
 msgid "OpenEduCat Category"
-msgstr "فئة OpenEducat"
+msgstr "فئة اجيال"
 
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_op_course
 msgid "OpenEduCat Course"
-msgstr "دورة OpenEducat"
+msgstr "دورة اجيال"
 
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_op_department
 msgid "OpenEduCat Department"
-msgstr "قسم OpenEducat"
+msgstr "قسم اجيال"
 
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_op_faculty
 msgid "OpenEduCat Faculty"
-msgstr "OpenEducat هيئة التدريس"
+msgstr "اجيال هيئة التدريس"
 
 #. module: openeducat_core
 #. odoo-javascript
@@ -2724,12 +2724,12 @@ msgstr "ريسيبتيفيس التكنولوجيا"
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "OpenEduCat LMS"
-msgstr "OpenEducat LMS"
+msgstr "اجيال LMS"
 
 #. module: openeducat_core
 #: model:ir.module.category,name:openeducat_core.module_category_openeducat_others
 msgid "OpenEduCat Others"
-msgstr "OpenEducat الآخرين"
+msgstr "اجيال الآخرين"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -2737,7 +2737,7 @@ msgid ""
 "OpenEduCat learning management system helps you to create your online course.\n"
 "                                        Create your sections and course material in it."
 msgstr ""
-"يساعدك نظام إدارة التعلم OpenEducat على إنشاء الدورة التدريبية عبر الإنترنت.\n"
+"يساعدك نظام إدارة التعلم اجيال على إنشاء الدورة التدريبية عبر الإنترنت.\n"
 "                                        قم بإنشاء أقسامك ومواد الدورة التدريبية فيه."
 
 #. module: openeducat_core
@@ -2746,7 +2746,7 @@ msgid ""
 "OpenEduCat learning management system helps you to create your online "
 "course. Create your sections and course material in it."
 msgstr ""
-"يساعدك نظام إدارة التعلم OpenEducat على إنشاء الدورة التدريبية عبر الإنترنت."
+"يساعدك نظام إدارة التعلم اجيال على إنشاء الدورة التدريبية عبر الإنترنت."
 " قم بإنشاء أقسامك ومواد الدورة التدريبية فيه."
 
 #. module: openeducat_core
@@ -2756,14 +2756,14 @@ msgid ""
 "                                                options to send leave requests to different groups or sections of\n"
 "                                                people."
 msgstr ""
-"يوفر OpenEducat مساعدة لتحسين نظام المستخدم الإجمالي من خلال توفيره\n"
+"يوفر اجيال مساعدة لتحسين نظام المستخدم الإجمالي من خلال توفيره\n"
 "                                                خيارات لإرسال طلبات الإجازة إلى مجموعات أو أقسام مختلفة\n"
 "                                                اشخاص."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "OpenEducat"
-msgstr ""
+msgstr "اجيال"
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -3001,7 +3001,7 @@ msgstr "عقد ضمان الناشر"
 #: model:ir.actions.server,name:openeducat_core.ir_cron_module_update_notification_openeducat_ir_actions_server
 #: model:ir.cron,cron_name:openeducat_core.ir_cron_module_update_notification_openeducat
 msgid "Publisher: Update Notification OpenEduCat"
-msgstr "الناشر: تحديث إشعار OpenEducat"
+msgstr "الناشر: تحديث إشعار اجيال"
 
 #. module: openeducat_core
 #: model:op.student,first_name:openeducat_core.op_student_13
@@ -3597,7 +3597,7 @@ msgstr "نظرية"
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid ""
 "This Module Adds The Feature Of Digital Library To Read Books In OpenEduCat."
-msgstr "تضيف هذه الوحدة ميزة المكتبة الرقمية لقراءة الكتب في OpenEducat."
+msgstr "تضيف هذه الوحدة ميزة المكتبة الرقمية لقراءة الكتب في اجيال."
 
 #. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_op_faculty__email_normalized
@@ -3617,14 +3617,14 @@ msgstr "هذا لتاكيد ان"
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "This module adds the feature in OpenEduCat LMS to sell courses online."
-msgstr "تضيف هذه الوحدة الميزة في OpenEducat LMS لبيع الدورات عبر الإنترنت."
+msgstr "تضيف هذه الوحدة الميزة في اجيال LMS لبيع الدورات عبر الإنترنت."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid ""
 "This module adds the feature of forum in learning management system to "
 "OpenEduCat."
-msgstr "تضيف هذه الوحدة ميزة المنتدى في نظام إدارة التعلم إلى OpenEducat."
+msgstr "تضيف هذه الوحدة ميزة المنتدى في نظام إدارة التعلم إلى اجيال."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
@@ -3632,19 +3632,19 @@ msgid ""
 "This module adds the feature of gamification in learning management system "
 "to OpenEduCat."
 msgstr ""
-"تضيف هذه الوحدة ميزة Gamification في نظام إدارة التعلم إلى OpenEducat."
+"تضيف هذه الوحدة ميزة Gamification في نظام إدارة التعلم إلى اجيال."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid ""
 "This module adds the feature of survey in learning management system to "
 "OpenEduCat."
-msgstr "تضيف هذه الوحدة ميزة المسح في نظام إدارة التعلم إلى OpenEducat."
+msgstr "تضيف هذه الوحدة ميزة المسح في نظام إدارة التعلم إلى اجيال."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
 msgid "This module adds the feature to manage facilities to OpenEduCat."
-msgstr "تضيف هذه الوحدة الميزة لإدارة المنشآت إلى OpenEducat."
+msgstr "تضيف هذه الوحدة الميزة لإدارة المنشآت إلى اجيال."
 
 #. module: openeducat_core
 #: model_terms:ir.ui.view,arch_db:openeducat_core.res_config_settings_view_form_core
