@@ -21,18 +21,17 @@
         <field name="arch" type="xml">
             <form>
                 <header>
-                    <!-- Certified Button -->
-                    <button name="action_certified" type="object" string="Certified" class="oe_highlight"/>
+                    <!-- Certified Button-->
+                    <button name="action_certified" string="Certified" type="object" class="oe_highlight"
+                        invisible="state != 'new'"/>
 
-                        <!-- New Button-->
-                        <button name="action_new" type="object" string="New" class="oe_highlight"/>
+                        <button name="action_closed" string="Closed" type="object" class="oe_highlight"
+                            invisible="state != 'certified'"/>
 
-                            <!-- Reset To Draft-->
-                            <button name="action_closed" type="object" string="Closed" class="oe_highlight"/>
-                            <!--string,visible= "Closed"-->
+                            <button name="action_new" string="Set to New" type="object" class="oe_highlight"
+                                invisible="state == 'new'"/>
 
-                                <!--State Bar-->
-                                <field name="state" widget="statusbar" statusbar_visible="Certified,New,Closed"/>
+                                <field name="state" widget="statusbar" statusbar_visible="new,certified,closed"/>
                 </header>
                 <sheet>
                     <div class="oe_title">

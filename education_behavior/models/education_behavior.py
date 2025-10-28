@@ -46,13 +46,13 @@ class EducationBehavior(models.Model):
 	attachment_ids = fields.Many2many('ir.attachment', string='Attachment', required=True)
 
 	def action_certified(self):
-		self.ensure_one()
-		self.state = 'certified'
-
-	def action_new(self):
-		self.ensure_one()
-		self.state = 'new'
+		for record in self:
+			record.state = 'certified'
 
 	def action_closed(self):
-		self.ensure_one()
-		self.state = 'closed'
+		for record in self:
+			record.state = 'closed'
+
+	def action_new(self):
+		for record in self:
+			record.state = 'new'

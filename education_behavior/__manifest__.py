@@ -1,8 +1,8 @@
 {
-    'name': 'Educational Behavior Management',
+    'name': 'Educational Behavior and Discipline Management',
     'version': '17.0.1.0.0',
     'category': 'Industries',
-    'summary': """"Openerp to Student Attendance Management System for 
+    'summary': """"Openerp to Student Behavior and Discipline Management System for 
      Educational ERP""",
     'description': """Students behavior and Discipline""",
     'author': 'Cybrosys Techno Solutions',
