@@ -28,8 +28,8 @@
                         <button name="action_closed" string="Closed" type="object" class="oe_highlight"
                             invisible="state != 'certified'"/>
 
-                            <button name="action_new" string="Set to New" type="object" class="oe_highlight"
-                                invisible="state == 'new'"/>
+                            <button name="action_new" string="Set to New" type="object"
+                                invisible="state in ('new','closed')"/>
 
                                 <field name="state" widget="statusbar" statusbar_visible="new,certified,closed"/>
                 </header>
@@ -41,14 +41,14 @@
                     </div>
                     <group>
                         <group>
-                            <field name="student_id"/>
-                            <field name="class_id"/>
-                            <field name="date"/>
+                            <field name="student_id" readonly="state == 'closed'"/>
+                            <field name="class_id" readonly="state == 'closed'"/>
+                            <field name="date" readonly="state == 'closed'"/>
                         </group>
                         <group>
-                            <field name="category"/>
-                            <field name="level"/>
-                            <field name="responsible_id"/>
+                            <field name="category" readonly="state == 'closed'"/>
+                            <field name="level" readonly="state == 'closed'"/>
+                            <field name="responsible_id" readonly="state == 'closed'"/>
                         </group>
                     </group>
 
@@ -56,19 +56,19 @@
                         <page string="Details" autofocus="autofocus">
                             <group>
                                 <field name="description" placeholder="Detailed description of the incident"/>
-                                <field name="action_taken" placeholder="Admonition, Deprivation or Referral"/>
+                                <field name="action_taken" placeholder="Admonition, Deprivation or Referral" readonly="state == 'closed'"/>
                             </group>
                         </page>
                         <page string="Attachments">
-                            <field name="attachment_ids" placeholder="Attach any relevant documents, images, or reports"/>
+                            <field name="attachment_ids" placeholder="Attach any relevant documents, images, or reports" readonly="state == 'closed'"/>
                         </page>
                     </notebook>
                 </sheet>
-                <div class="oe_chatter">
+                <!--div class="oe_chatter">
                     <field name="message_follower_ids"/>
                     <field name="activity_ids"/>
                     <field name="message_ids"/>
-                </div>
+                </div-->
             </form>
         </field>
     </record>
