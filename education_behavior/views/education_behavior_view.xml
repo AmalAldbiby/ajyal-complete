@@ -1,0 +1,114 @@
+<odoo>
+    <record id="education_behavior_tree_view" model="ir.ui.view">
+        <field name="name">education.behavior.tree</field>
+        <field name="model">education.behavior</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="student_id"/>
+                <field name="class_id"/>
+                <field name="date"/>
+                <field name="category"/>
+                <field name="level"/>
+                <field name="state" widget="badge" decoration-success="state =='closed'" decoration-info="state == 'certified'"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="education_behavior_form_view" model="ir.ui.view">
+        <field name="name">education.behavior.form</field>
+        <field name="model">education.behavior</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <!-- Certified Button -->
+                    <button name="action_certified" type="object" string="Certified" class="oe_highlight"/>
+
+                        <!-- New Button-->
+                        <button name="action_new" type="object" string="New" class="oe_highlight"/>
+
+                            <!-- Reset To Draft-->
+                            <button name="action_closed" type="object" string="Closed" class="oe_highlight"/>
+                            <!--string,visible= "Closed"-->
+
+                                <!--State Bar-->
+                                <field name="state" widget="statusbar" statusbar_visible="Certified,New,Closed"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" readonly='true'/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="student_id"/>
+                            <field name="class_id"/>
+                            <field name="date"/>
+                        </group>
+                        <group>
+                            <field name="category"/>
+                            <field name="level"/>
+                            <field name="responsible_id"/>
+                        </group>
+                    </group>
+
+                    <notebook>
+                        <page string="Details" autofocus="autofocus">
+                            <group>
+                                <field name="description" placeholder="Detailed description of the incident"/>
+                                <field name="action_taken" placeholder="Admonition, Deprivation or Referral"/>
+                            </group>
+                        </page>
+                        <page string="Attachments">
+                            <field name="attachment_ids" placeholder="Attach any relevant documents, images, or reports"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="education_behavior_action" model="ir.actions.act_window">
+        <field name="name">Behavior and Discipline</field>
+        <field name="res_model">education.behavior</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_create">
+                Click to create a new Behavior/Discipline
+            </p>
+        </field>
+    </record>
+
+    <record id="education_behavior_for_student_action" model="ir.actions.act_window">
+        <field name="name">Behavior and Discipline</field>
+        <field name="res_model">education.behavior</field>
+        <field name="view_mode">tree,form</field>
+        
+        <field name="binding_model_id" ref="education_core.model_education_student"/>
+        <field name="binding_view_types">list</field>
+
+        <field name="domain">[('student_id', 'in', active_ids)]</field>
+        <field name="context">{'default_student_id': active_id}</field>
+    </record>
+
+    <menuitem
+            id="menu_education_behavior_root"
+            name="Behavior and Discipline"
+            web_icon="education_behavior,static/description/icon.png"
+            />
+
+        <!--Sub menu-->
+        <menuitem
+            id="menu_item_education_behavior_records"
+            name="All Behavior Records"
+            parent="menu_education_behavior_root"
+            action="education_behavior_action"
+            />
+
+</odoo>

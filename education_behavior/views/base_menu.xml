@@ -1,0 +1,21 @@
+<odoo>
+	<!--main menu-->
+	<menuitem
+		id="menu_education_behavior_root"
+		name="Behavior and Discipline"
+		web_icon="education_behavior,static/description/icon.png"
+		/>
+		<!--Sub menu-->
+	<!--menuitem
+		id="menu_education_behavior_main"
+		name="Behavior"
+		parent="menu_education_behavior_root"
+		/>
+
+	<menuitem
+		id="menu_item_education_behavior"
+		name="Behavior Rrecord"
+		parent="menu_education_behavior_main"
+		action="education_behavior_action"
+		/-->
+</odoo>
