@@ -11,9 +11,11 @@ class EducationBehavior(models.Model):
 	#serial number YY-Sequence (Ex: 25-001)
 	@api.model
 	def create (self, vals):
-		sequence = self.env['ir.sequence'].next_by_code('education.behavior') or ''
-		current_year = str(datetime.now().year)[-2:]
-		vals['name'] = f"{current_year}/{sequence}"
+		if vals.get('date'):
+			record_date = fields.Date.from_string(vals.get('date'))
+			year_from_date = str(record_date.year)[-2:]
+			sequence = self.env['ir.sequence'].next_by_code('education.behavior') or ''
+			vals['name'] = f"{year_from_date}/{sequence}"
 		res = super(EducationBehavior, self).create(vals)
 		return res
 
