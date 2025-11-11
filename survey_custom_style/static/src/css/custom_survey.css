@@ -1,0 +1,35 @@
+/*
+Custom Styles
+*/
+/* Choice Buttons */
+.o_survey_form .o_survey_choice_btn {
+	background-color: #ADD8E6 !important;
+	color: darkblue !important;
+	/*font-weight: bold !important;*/
+	border: 1px solid #00008B !important;
+}
+
+/* Start Buttons */ 
+ .o_survey_start .btn-primary {
+	background-color: #ADD8E6 !important;
+	border-color: #00008B !important;
+	color: #00008B !important;
+}
+
+ /* Hover Effect For Start Buttons */
+ .o_survey_start .btn-primary:hover {
+	background-color: #9AC7D8 !important;
+	border-color: #00008B !important;
+	color: #00008B !important;
+} */
+
+/*  Button Circle Color */
+.o_survey_form .o_survey_choice_btn .fa-circle-thin {
+	color: rgba(0, 0, 139, 0.7) !important;
+}
+
+/* Hide Odoo logo */
+
+.o_survey_brand_message {
+	display: none !important;
+}
