@@ -49,6 +49,7 @@
                             <field name="category" readonly="state == 'closed'"/>
                             <field name="level" readonly="state == 'closed'"/>
                             <field name="responsible_id" readonly="state == 'closed'"/>
+                            <field name="responsible_person_id" readonly="state == 'closed'"/>
                         </group>
                     </group>
 

@@ -22,7 +22,7 @@ class EducationBehavior(models.Model):
 	name = fields.Char(string='Sequence', help="Ex: 25-001")
 	#One student have Many behavior report
 	student_id = fields.Many2one('education.student', string='Student Id', required=True, Tracking=True)
-	class_id = fields.Char(string='Class Id', required=True)
+	class_id = fields.Many2one('education.class', string='Class Id', required=True)
 	date = fields.Date(required=True)
 
 	category = fields.Selection([
@@ -41,6 +41,8 @@ class EducationBehavior(models.Model):
 		('teacher','Teacher'),('guide','Guide'),
 		('agent','Agent')], default='teacher', Tracking=True)
 
+	responsible_person_id = fields.Char(string='Responsible Name', required=True)
+	
 	state = fields.Selection([
 		('new','New'),('certified','Certified'),
 		('closed','Closed')], default='new', Tracking=True)
